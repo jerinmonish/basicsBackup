@@ -1,0 +1,813 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import CoreUI styles
+@import "~@coreui/coreui-pro/scss/coreui.scss";
+
+// Some temp fixes
+@import "fixes";
+
+// If you want to add something do it here
+@import "custom";
+
+/*Added on 27-01-2022 by Jerin*/
+.error {
+  color: red;
+}
+
+.SingleDatePicker {
+  display: block !important;
+}
+
+.SingleDatePickerInput__showClearDate {
+  width: 100% !important;
+}
+
+.DateInput {
+  width: 100% !important;
+}
+
+#compay_add_show_caste {
+  margin-top: 58px !important;
+}
+
+#accumulation_add_leave {
+  margin-top: 50px !important;
+}
+
+/*Ended on 27-01-2022 by Jerin*/
+
+/* Added  on 2-Feb-2022 by Paul */
+.c-sidebar .c-sidebar-nav-link:hover,
+.c-sidebar .c-sidebar-nav-dropdown-toggle:hover {
+  background-color: rgb(16, 17, 16) !important;
+}
+
+//  End on 2-Feb-2022 by Paul
+
+/* Added  on 8-Feb-2022 by Paul */
+.swal2-popup.swal2-modal.swal2-show {
+  font-size: medium !important;
+  width: auto;
+}
+
+h2#swal2-title {
+  font-size: larger !important;
+}
+
+button.swal2-confirm.swal2-styled {
+  font-size: small !important;
+}
+
+button.swal2-cancel.swal2-styled.swal2-default-outline {
+  font-size: small !important;
+}
+
+//  End on 8-Feb-2022 by Paul
+/*Added on 08-02-2022 by Jerin*/
+.boc-light .boc-fill {
+  fill: #137abd !important;
+}
+
+/*Ended on 08-02-2022 by Jerin*/
+/* Added  on 10-Feb-2022 by Paul */
+
+.c-app.c-default-layout.flex-row.align-items-center {
+  background-image: url(../assets/Resized_backround.png);
+  // height: 400px !important;
+  // background-image: url(https://wallpaperaccess.com/full/2053215.jpg);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  // opacity: 0.5;
+  // opacity: 0.1;
+  opacity: 1;
+}
+
+.logo-part {
+  position: absolute;
+  top: -60px;
+  // left: 245px;
+  z-index: 2;
+  background: white;
+  /* border: 1px solid black; */
+  border-radius: 73px;
+  padding: 6px;
+
+  img {
+    border-radius: 50px;
+  }
+}
+
+.login-card {
+  border-radius: 5px;
+}
+
+.p-4.login-card.card {
+  border-radius: 20px;
+}
+
+.login-main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  backdrop-filter: brightness(0.2);
+}
+
+.careerStart-main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  backdrop-filter: brightness(0.2);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+/*Ribbon cover by Jerin Starts - 18-04-2022*/
+/* common */
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #2980b9;
+}
+
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  color: #fff;
+  // font: 700 18px/1 'Lato', sans-serif;
+  font: 700 12px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* top right*/
+.ribbon-top-right {
+  top: 0px;
+  right: 0px;
+}
+
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+
+.ribbon-top-right::before {
+  top: 0;
+  left: 0;
+}
+
+.ribbon-top-right::after {
+  bottom: 0;
+  right: 0;
+}
+
+.ribbon-top-right span {
+  left: -25px;
+  // right: 0px;
+  top: 30px;
+  transform: rotate(45deg);
+}
+
+/*Ribbon cover by Jerin Ends - 18-04-2022*/
+.mulForm>div>div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 7px 30px 2px 30px;
+  white-space: pre-line;
+}
+
+// .mulFormallocation {
+
+//   padding: 7px 300px 2px 300px;
+// }
+
+.mulForm .sc-bczRLJ::after {
+  width: 80px;
+  top: 20px;
+  text-align: center;
+}
+
+.profile {
+  margin-left: -18px;
+  height: auto;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.c-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile-area {
+  height: auto;
+}
+
+.profile-image {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.profile-details .name {
+  font-size: 20px;
+  color: #da9101;
+  font-weight: bold;
+}
+
+.designation {
+  font-size: 14px;
+  // color: skyblue;
+  color: rgb(28, 3, 247);
+  cursor: pointer;
+}
+
+.mail {
+  font-size: 14px;
+  color: rgb(28, 3, 247);
+}
+
+.phone-number {
+  font-size: 14px;
+  color: rgb(28, 3, 247);
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.accordion .card-header {
+  height: 40px;
+  background-color: #fff;
+  border-bottom: 2px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion .card {
+  margin-bottom: 10px;
+}
+
+.justify-content-spacebetween {
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* ended  on 10-Feb-2022 by Paul */
+
+/* Added  on 11-Feb-2022 by Paul */
+.DateInput_input {
+  padding: 4px !important;
+  font-size: small !important;
+}
+
+.SingleDatePickerInput__withBorder {
+  border-radius: 2px;
+  border: 1px solid #dbdbdb;
+  width: 100%;
+}
+
+.SingleDatePickerInput__withBorder {
+  border-radius: 3px !important;
+  border: 1px solid #dbdbdb;
+}
+
+/* ended  on 11-Feb-2022 by Paul */
+
+label {
+  font-weight: bolder;
+  color: black;
+  font-size: 14px;
+  // font-size: 12px;
+}
+
+.ml-2 {
+  font-weight: 100 !important;
+}
+
+// added 22-Feb-2022 by Franklin
+// .form-group label{
+//     font-weight: 500;
+// }
+// .form-group input{
+//     border: 2px solid lightgray;
+// }
+
+// .form-group textarea{
+//     border: 2px solid lightgray;
+// }
+.header {
+  background-color: #fafad2 !important;
+  height: auto;
+  font-size: 20px;
+
+  h5 {
+    font-weight: bold !important;
+  }
+}
+
+.careerheader {
+  background-color: #d8dbe0 !important;
+  // border-color: #0e8b8b !important;
+}
+
+#headingOne,
+#headingTwo,
+#headingThree,
+#headingFour,
+#headingFive {
+  // color: #0e8b8b !important;
+  // border-color: #0e8b8b !important;
+}
+
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color: #0e8b8b;
+  font-weight: bold;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: white;
+  background-color: #0e8b8b;
+  border-color: #c4c9d0 #c4c9d0 #ebedef;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #0e8b8b !important;
+  // float: right;
+}
+
+.btn-primary:hover {
+  background-color: #0e8b8bc7 !important;
+}
+
+
+// start
+
+.btn-success {
+
+  background-color: #2eb85cad !important;
+
+  a {
+
+    color: white !important;
+  }
+}
+
+.btn-primary a {
+  color: white !important;
+}
+
+.btn-danger {
+
+  background-color: #e55353ab !important;
+
+  a {
+    color: white !important;
+  }
+}
+
+.btn-info {
+  background-color: #3399ff9e !important;
+
+  a {
+    color: white !important;
+
+  }
+}
+
+table th {
+  color: white;
+  background-color: #eac53e !important;
+}
+
+.table-sm {
+  display: none;
+}
+
+.custom-control-inline {
+  display: inline-flex;
+  margin-right: 1rem;
+  font-size: 14px !important;
+}
+
+.c-wrapper:not(.c-wrapper-fluid) .c-header-fixed {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #3399ff !important;
+  color: white;
+}
+
+.c-footer {
+  color: #3c4b64;
+  background: #3399ff !important;
+  border-top: 1px solid #d8dbe0;
+
+
+  div {
+    color: black;
+    font-weight: bold;
+
+    a {
+      color: #ffff !important;
+    }
+  }
+}
+
+// .btn.btn-info {
+//    font-size: 16px !important;
+//     margin-top: -5px !important;
+// }
+
+// .btn.btn-success {
+//     font-size: 16px !important;
+//     margin-top: -5px !important;
+// }
+// .btn.btn-danger {
+//     font-size: 16px !important;
+//     margin-top: -5px !important;
+// }
+
+// .phone-number{
+//     display: flex;
+//     gap: 5px;
+// }
+
+// .profile-part{
+//     border: 2px solid lightgray;
+//     border-radius: 7px;
+//     padding: 5px;
+// }
+
+// .profile-part img{
+//     height: 150px;
+//     width: 150px;
+//     object-fit: cover;
+// }
+
+// .file_upload input[type=file]{
+//       position: relative;
+//     left: 18px;
+//     top: -32px;
+//     opacity: 0;
+//     width: 20%;
+// }
+// end 22-Feb-2022 by Franklin
+
+// added by paul on 24-feb-2022
+// for select group in organisation chart.jsx
+// .col-md-4{
+//     flex: none !important;
+// }
+// added by paul on 24-feb-2022
+
+//  added by paul
+ul {
+  list-style: none !important;
+}
+
+//  added by paul  on 18-Mar-2022
+// for View Employee
+.card {
+  height: 100% !important;
+  width: 100% !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.form-horizontal .card {
+  border: 1px solid #28252557 !important;
+
+  .card-header {
+    // background-color: #d8dbe0 !important;
+    //height: 40px;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+  }
+
+  h4 {
+    color: #da9101 !important;
+    margin-bottom: inherit !important;
+    font-weight: bold !important;
+  }
+}
+
+.table th,
+.table td {
+  padding: 8px !important;
+}
+
+//  added by paul  on 18-Mar-2022
+//  for font family change to entire place
+
+// body{
+//   // font-family: cursive;
+//   font-family: 'Times New Roman', Times, serif;
+//   font-weight: bold;
+// }
+
+// a.nav-link {
+//     font-size: large !important;
+// }
+
+// ul.c-sidebar-nav.h-100.ps {
+//     font-size: large;
+// }
+.card .card-header {
+  padding: 1.10rem 1.25rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid;
+  background-color: #fff;
+  color: #da9101 !important;
+  font-weight: bold;
+  font-size: 20px;
+  border-color: #da9101 !important;
+}
+
+.c-sidebar {
+  color: #fff;
+  background: #3399ff !important;
+}
+
+
+// end
+
+
+.c-sidebar-nav-item {
+  width: inherit;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.c-sidebar-nav-item svg {
+  color: #eac340 !important;
+  height: 26px !important;
+  width: 26px !important;
+  stroke: #eac53e;
+  stroke-width: 4%;
+
+}
+
+.c-sidebar-nav-dropdown {
+  position: relative;
+  transition: background 0.3s ease-in-out;
+  font-size: 16px;
+  font-weight: bold;
+
+  svg {
+    color: #eac340 !important;
+    height: 26px !important;
+    width: 26px !important;
+    stroke: #eac53e;
+    stroke-width: 4%;
+
+  }
+}
+
+.c-sidebar .c-sidebar-nav-link:hover,
+.c-sidebar .c-sidebar-nav-dropdown-toggle:hover {
+  background-color: rgba(0, 0, 21, 0.2) !important;
+}
+
+.c-header-toggler-icon {
+  background-image: url(../../src/assets/menu.png) !important;
+  width: 26px !important;
+}
+
+.c-datatable-filter svg {
+  color: #eac340 !important;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #1e64bc;
+}
+
+.actions-part {
+  .action-part-fields {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    margin-bottom: initial !important;
+
+    label {
+      margin-top: 15px;
+    }
+  }
+}
+
+// by paul
+// icon alignment
+.action-alignment {
+  display: flex;
+}
+
+// .row {
+//   display: block !important;
+// }
+
+// for font bold  pagenation data
+
+.fontchange {
+  font-weight: bold;
+  color: black;
+}
+
+
+.btn-warning {
+  color: white !important;
+}
+
+.c-sidebar .c-sidebar-minimizer {
+  background-color: rgb(51 153 255) !important;
+  background-image: url('../assets/footerimg.png') !important;
+  background-repeat: no-repeat;
+  background-size: 256px 55px;
+  background-position: center;
+  object-fit: contain;
+  position: relative;
+  bottom: 10px;
+}
+
+.c-sidebar .c-sidebar-minimizer::before {
+  background-image: none !important;
+}
+
+.c-sidebar-minimizer::before {
+  display: block;
+  width: 0;
+  height: 0;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12.5px;
+  transition: 0.3s;
+}
+
+@media (max-width: 991.98px) {
+  .c-sidebar-minimizer {
+    display: initial !important;
+  }
+}
+
+.bottom-logo {
+  width: 100%;
+  object-fit: contain;
+  position: relative;
+  bottom: 2px;
+  height: 120px;
+}
+
+
+@media (max-width: 425px) {
+  .responsive-profile {
+    display: initial !important;
+  }
+}
+
+.imgTopLogo {
+  width: 100%;
+  height: 115px;
+  background: white !important;
+}
+
+.imgTopLogo img {
+  width: 100%;
+}
+
+// add by paul 
+
+// while testing in firefox browser add button is coming in center 
+
+.flotfirefox {
+  float: right;
+}
+
+// added by Paul 
+
+.badge-pill {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  border-radius: 4px !important;
+}
+
+// for badge to submit
+span.badge.badge-backgroud-colour {
+  background-color: turquoise;
+}
+
+// .leave-ribbon-top-right span {
+//   left: -25px;
+//   top: 30px;
+//   transform: rotate(45deg) !important;
+// }
+/*Added by Jerin to remove up and down arrow keys for input type number*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.fc-button {
+  text-transform: capitalize !important;
+}
+.fc-event-time {
+  display: none;
+}
+/*Added by Jerin to remove up and down arrow keys for input type number ends*/
+
+
+// for callender leave status view list - by Paul 
+.calendar_all_days {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-color: red yellow;
+  // background-color: lightgreen;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: -8px;
+
+  .col-lg-3 {
+    padding: 0px;
+  }
+
+}
+
+/* width */
+.calendar_all_days::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+.calendar_all_days::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.calendar_all_days::-webkit-scrollbar-thumb {
+  background: #b6b3b3;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.calendar_all_days::-webkit-scrollbar-thumb:hover {
+  background: #8b8a8a;
+}
+
+.c-main {
+
+  padding-top: 20px !important;
+}

@@ -1,0 +1,13 @@
+.custum-label-wrapper label {
+    white-space: nowrap;
+}
+
+@media (max-width: 425px) {
+    .custum-label-wrapper label {
+        white-space: initial !important;
+    }
+
+    .custum-label-wrapper .ml-2 {
+        margin-left: auto !important;
+    }
+}
